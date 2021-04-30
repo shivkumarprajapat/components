@@ -1,9 +1,9 @@
 import React from 'react'
-import ImageGallery from './filterGallery/ImageGallery'
+import RecaptchaCode from './Recaptcha in React/RecaptchaCode'
 function App() {
   return (
     <>
-      <ImageGallery />
+      <RecaptchaCode />
     </>
 
   );
