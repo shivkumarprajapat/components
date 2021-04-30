@@ -1,0 +1,14 @@
+{
+    "Home": {
+        "title": "Home Components"
+    },
+    "About": {
+        "title": "About Components"
+    },
+    "Blog": {
+        "title": "Blog Components"
+    },
+    "Service": {
+        "title": "Service Components"
+    }
+}
