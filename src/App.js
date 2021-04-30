@@ -1,9 +1,9 @@
 import React from 'react'
-import ProgressBar from './Progress-Bar/ProgressBar'
+import ImageGallery from './filterGallery/ImageGallery'
 function App() {
   return (
     <>
-      <ProgressBar />
+      <ImageGallery />
     </>
 
   );
