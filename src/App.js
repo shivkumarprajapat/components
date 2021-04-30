@@ -1,9 +1,9 @@
 import React from 'react'
-import RecaptchaCode from './Recaptcha in React/RecaptchaCode'
+import Preloader from './Preloader'
 function App() {
   return (
     <>
-      <RecaptchaCode />
+      <Preloader />
     </>
 
   );
