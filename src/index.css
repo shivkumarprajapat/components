@@ -7,7 +7,108 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ .home-img {
+    width: 100%;
+    padding: 0 15px;
+}
+.home-img-inner {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+}
+.home-course {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: spin 30s linear infinite;
+    border-radius: 100%;
+}
+
+.home-course-item{
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: lightblue;
+
+}
+.home-course-item:nth-child(1){
+	left:-40px;
+	top:calc(50%-40px);
+}
+.home-course-item:nth-child(2){
+	right:-40px;
+	top:calc(50%-40px);
+}
+.home-course-item:nth-child(3){
+	bottom:-40px;
+	left:calc(50%-40px);
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes zoom{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.9);
+	}
+}
+
+
+.home-img-inner img {
+    width: 100%;
+    animation: zoom 5s linear infinite;
+}
+
+
+.custom-search {
+  position: relative;
+  width: 300px;
+}
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-search-botton {
+  position: absolute;
+  right: 3px; 
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #d1095e;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.sc-jrQzUz.dwOPCC.rsc-container {
+    position: fixed;
+    right: 0;
+    top: 130px;
+    content: '';
 }
