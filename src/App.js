@@ -1,17 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Routes from "./Routes";
-
-function App() {
-    return (
-        <Router>
-            <Navbar />
-            <div className="container mt-5">
-                <Routes />
-            </div>
-        </Router>
-    );
+import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import Home from './Home'
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <Home />
+      <Footer />
+    </div>
+  )
 }
-
-export default App;
